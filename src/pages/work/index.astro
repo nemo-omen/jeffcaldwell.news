@@ -1,0 +1,147 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+---
+<BaseLayout title="Work">
+  <section class="work">
+  
+    <h2>Writing</h2>
+    <div class="work-list">
+      <article class="article-container">
+            <a class="storylink" href="https://www.conchovalleyhomepage.com/news/health/coronavirus/san-angelo-listed-as-city-in-texas-where-covid-19-is-growing-the-fastest/">
+              San Angelo listed as city in Texas where COVID-19 is growing the fastest
+            </a>
+        <date>September 2, 2021</date>
+      </article>
+      <article class="article-container">
+          <a class="storylink" href="https://www.conchovalleyhomepage.com/news/local-news/san-angelo-area-aep-crews-will-head-to-louisiana-to-assist-in-hurricane-ida-repairs/">
+            San  Angelo area AEP crews will head to Louisiana to assist with Hurricane Ida repairs
+          </a>
+        <date>August 30, 2021</date>
+      </article>
+      <article class="article-container">
+          <a class="storylink" href="https://www.conchovalleyhomepage.com/news/which-school-districts-are-enforcing-or-not-enforcing-the-tgc-local-health-authoritys-mask-order/">
+            Which school districts are enforcing, or not enforcing, the TGC Local Health Authority's mask order?
+          </a>
+        <date>August 26, 2021</date>
+      </article>
+      <article class="article-container">
+          <a class="storylink" href="https://www.conchovalleyhomepage.com/news/caleb-wallace-anti-mask-organizer-and-co-founder-of-the-san-angelo-freedom-defenders-dies-of-covid-19/">
+            Caleb Wallace, anti-mask organizer and co-founder of the San Angelo Freedom Defenders, dies of COVID-19
+          </a>
+        <date>August 28, 2021</date>
+      </article>
+      <article class="article-container">
+          <a class="storylink" href="https://www.conchovalleyhomepage.com/news/texas-politics/3rd-special-session-what-is-the-safe-outdoor-dogs-act/">
+            3rd special session: What is the Safe Outdoor Dogs Act?
+          </a>
+        <date>September 9, 2021</date>
+      </article>
+      <article class="article-container">
+          <a class="storylink" href="https://www.conchovalleyhomepage.com/news/local-news/scammers-disguised-as-sapd-are-spoofing-people-in-san-angelo/">
+            Scammers disguised as SAPD are spoofing people in San Angelo
+          </a>
+        <date>September 3, 2021</date>
+      </article>
+    </div>
+    <h2>Video</h2>
+    <div class="work-container">
+      <article class="work-card">
+        <div class="work-card-head">
+          <h3>Pop Art Alley</h3>
+        </div>
+        <video controls preload="metadata" poster="https://jeffcaldwell.news/images/PopArtAlley.png">
+          <source src="/video/072619_PopArtAlley.mp4" type="video/mp4">
+        </video>
+      </article>
+      <article class="work-card">
+        <div class="work-card-head">
+          <h3>Pride Week Skate Party</h3>
+        </div>
+        <video controls preload="metadata" poster="https://jeffcaldwell.news/images/SkateNight.png">
+          <source src="/video/062019_PrideSkateParty.mp4" type="video/mp4">
+        </video>
+
+      </article>
+      <article class="work-card">
+        <div class="work-card-head">
+          <h3>ASU Engineering Lab</h3>
+        </div>
+        <video controls preload="metadata" poster="https://jeffcaldwell.news/images/ASUEngineering.png">
+          <source src="/video/061919_ASUEngineering_CVHP.mp4" type="video/mp4">
+        </video>
+
+      </article>
+      <article class="work-card">
+        <div class="work-card-head">
+          <h3>Ports to Plains</h3>
+        </div>
+        <video controls preload="metadata" poster="https://jeffcaldwell.news/images/PortsToPlains.png">
+          <source src="/video/061219_PortsToPlains_Final.mp4" type="video/mp4">
+        </video>
+
+      </article>
+      <article class="work-card">
+        <div class="work-card-head">
+          <h3>Religious Refusal Bill</h3>
+        </div>
+        <video controls preload="metadata" poster="https://jeffcaldwell.news/images/ReligiousRefusal.png">
+          <source src="/video/ReligiousRefusal-April.mp4" type="video/mp4">
+        </video>
+
+      </article>
+      <article class="work-card">
+        <div class="work-card-head">
+          <h3>Peaceful Valley Donkey Rescue</h3>
+        </div>
+        <video controls preload="metadata" poster="https://jeffcaldwell.news/images/DonkeyRescue.png">
+          <source src="/video/PeacefulValley_March2019.mp4" type="video/mp4">
+        </video>
+
+      </article>
+    </div>
+  </section>
+</BaseLayout>
+
+<style>
+  .work > * + * {
+    margin-top: 2rem;
+  }
+
+  .work-container {
+    min-width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(350px, 1fr));
+    grid-gap: 1rem;
+    justify-content: start;
+  }
+
+  .work-list {
+    padding-inline: 0.5rem;
+  }
+
+  .work-list > * + * {
+    margin-top: 0.75rem;
+  }
+
+  .work-card {
+    margin-bottom: 1rem;
+  }
+
+  .work-card > * + * {
+    margin-top: 1rem;
+  }
+
+  video {
+    width: 100% !important;
+    height: auto !important;
+  }
+
+  a, a:visited, .storylink {
+    color: var(--primary) !important;
+    transition: color 0.3s ease-in-out !important;
+  }
+
+  a:hover {
+    color: tomato !important;
+  }
+</style>

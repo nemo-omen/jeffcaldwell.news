@@ -33,6 +33,15 @@ main {
   gap: 2rem;
 }
 
+a, a:visited, .storylink {
+  color: var(--primary) !important;
+  transition: color 0.3s ease-in-out !important;
+}
+
+a:hover {
+  color: tomato !important;
+}
+
 #r-body > * + * {
   margin-top: 1rem;
 }
@@ -92,6 +101,15 @@ main {
     --primary: var(--light);
     --secondary: var(--dark);
     --offset-color: var(--lightdark);
+  }
+
+  a, a:visited {
+    color: var(--primary);
+    transition: color 0.3s ease-in-out;
+  }
+  
+  a:hover {
+    color: tomato;
   }
 }
 
