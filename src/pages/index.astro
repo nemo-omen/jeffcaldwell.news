@@ -1,27 +1,7 @@
 ---
-import Header from '../components/Header.astro';
-// Component Script:
-// You can write any JavaScript/TypeScript that you'd like here.
-// It will run during the build, but never in the browser.
-// All variables are available to use in the HTML template below.
-let title = 'Jeff Caldwell — Multimedia Journalist';
-
-// Full Astro Component Syntax:
-// https://docs.astro.build/core-concepts/astro-components/
+import BaseLayout from '../layouts/BaseLayout.astro';
 ---
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width">
-    <title>{title}</title>
-
-    <link rel="icon" type="image/x-icon" href="/favicon.ico" />
-    
-    <link rel="stylesheet" href="/style/global.css">
-</head>
-<body>
-<Header />
-    <main>
+    <BaseLayout>
         <div class="content" id="r-body">
             <section class="content-section" id="profile">
                 <h3>Profile</h3>
@@ -81,16 +61,14 @@ let title = 'Jeff Caldwell — Multimedia Journalist';
                 <h3>Education</h3>
                 <div class="school">
                     <h4>Angelo State University</h4>
-                    <date>January 2021 - Present</date>
+                    <date>Jan 2021 - Present</date>
                     <p>Majoring in computer science</p>
                 </div>
                 <div class="school">
                     <h4>Howard College</h4>
-                    <date>January 2019 - December 2020</date>
+                    <date>Jan 2019 - Dec 2020</date>
                     <p>Associate degree in communication</p>
                 </div>
             </section>
         </div>
-    </main>
-</body>
-</html>
+</BaseLayout>
