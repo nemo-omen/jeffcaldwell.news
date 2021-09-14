@@ -1,0 +1,96 @@
+---
+import Header from '../components/Header.astro';
+// Component Script:
+// You can write any JavaScript/TypeScript that you'd like here.
+// It will run during the build, but never in the browser.
+// All variables are available to use in the HTML template below.
+let title = 'Jeff Caldwell — Multimedia Journalist';
+
+// Full Astro Component Syntax:
+// https://docs.astro.build/core-concepts/astro-components/
+---
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <title>{title}</title>
+
+    <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+    
+    <link rel="stylesheet" href="/style/global.css">
+</head>
+<body>
+<Header />
+    <main>
+        <div class="content" id="r-body">
+            <section class="content-section" id="profile">
+                <h3>Profile</h3>
+                <p>I am a multimedia journalist whose three years of experience in a broadcast/digital newsroom has given me the ability to apply written, visual, and design storytelling skills across multiple platforms and media.</p>
+                <p>I love working on the web and using my technical and storytelling skills to tell informative and moving stories about the people in my community.</p>
+            </section>
+            <section class="content-section" id="history">
+                <h3>Work History</h3>
+                <article class="job">
+                    <div class="job-head">
+                        <h4>Digital Executive Producer</h4>
+                        <date>August, 2021 - Present</date>
+                    </div>
+                    <ul class="job-list">
+                        <li>Leads the digital content team to produce local news and deliver stories across platforms.</li>
+                        <li>Creates and executes content strategy to improve engagement and audience metrics on the core website and social media.</li>
+                        <li>Contributes written local news content as needed to help the digital team meet daily coverage goals.</li>
+                    </ul>
+                </article>
+                <article class="job">
+                    <div class="job-head">
+                        <h4>Digital Content Producer</h4>
+                        <date>July 2019 - August, 2021</date>
+                    </div>
+                        <ul class="job-list">
+                            <li>Oversaw the creation, technical execution, and production of live streaming and video content.</li>
+                            <li>Published and shared stories from a network of newsrooms across the country to the local site, mobile app, and social media.</li>
+                        </ul>
+                </article>
+                <article class="job">
+                    <div class="job-head">
+                        <h4>Multimedia Journalist</h4>
+                        <date>February 2019 - July, 2019</date>
+                    </div>
+                        <ul class="job-list">
+                            <li>Researched and developed engaging local stories for broadcast news.</li>
+                            <li>Produced, reported, shot, wrote, and edited video content.</li>
+                        </ul>
+                </article>
+            </section>
+        </div>
+
+        <div class="side main-side">
+            <section class="content-section">
+                <h3>Skills</h3>
+                <ul id="skills">
+                    <li>Writing</li>
+                    <li>Photography</li>
+                    <li>Videography</li>
+                    <li>Video Editing</li>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JavaScript</li>
+                </ul>
+            </section>
+            <section class="content-section">
+                <h3>Education</h3>
+                <div class="school">
+                    <h4>Angelo State University</h4>
+                    <date>January 2021 - Present</date>
+                    <p>Majoring in computer science</p>
+                </div>
+                <div class="school">
+                    <h4>Howard College</h4>
+                    <date>January 2019 - December 2020</date>
+                    <p>Associate degree in communication</p>
+                </div>
+            </section>
+        </div>
+    </main>
+</body>
+</html>
